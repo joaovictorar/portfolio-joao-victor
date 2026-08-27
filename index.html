@@ -9,7 +9,7 @@
       content="Portfólio profissional de João Victor Alves Ribeiro, Front-End Developer focado em sites responsivos, dashboards, aplicações web, APIs e projetos reais para negócios."
     />
     <meta name="author" content="João Victor Alves Ribeiro" />
-    <meta name="theme-color" content="#060913" />
+    <meta name="theme-color" content="#0b0d16" />
 
     <meta property="og:title" content="João Victor | Front-End Developer" />
     <meta
@@ -21,54 +21,71 @@
 
     <link rel="icon" href="./assets/favicon-jv.png" type="image/png" />
     <link rel="apple-touch-icon" href="./assets/favicon-jv.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="ambient" aria-hidden="true"></div>
 
-    <header class="header">
-      <a href="#home" class="logo" aria-label="Voltar para o início">João<span>Victor</span></a>
+    <!-- ===== EDITOR TAB BAR / HEADER ===== -->
+    <header class="header" id="top">
+      <div class="header-left">
+        <span class="traffic" aria-hidden="true">
+          <i></i><i></i><i></i>
+        </span>
+        <a href="#home" class="logo" aria-label="Voltar para o início">
+          <span class="logo-dir">~/</span>joão<span class="logo-accent">-victor</span><span class="logo-ext">.tsx</span>
+        </a>
+      </div>
 
       <nav class="nav" id="nav" aria-label="Navegação principal">
-        <a href="#home" data-pt="Início" data-en="Home">Início</a>
-        <a href="#about" data-pt="Sobre" data-en="About">Sobre</a>
-        <a href="#skills" data-pt="Tecnologias" data-en="Skills">Tecnologias</a>
-        <a href="#projects" data-pt="Projetos" data-en="Projects">Projetos</a>
-        <a href="#experience" data-pt="Experiência prática" data-en="Practical experience">Experiência prática</a>
-        <a href="#contact" data-pt="Contato" data-en="Contact">Contato</a>
+        <a href="#home" data-pt="início" data-en="home">início</a>
+        <a href="#about" data-pt="sobre" data-en="about">sobre</a>
+        <a href="#skills" data-pt="stack" data-en="stack">stack</a>
+        <a href="#projects" data-pt="projetos" data-en="projects">projetos</a>
+        <a href="#experience" data-pt="experiência" data-en="experience">experiência</a>
+        <a href="#contact" data-pt="contato" data-en="contact">contato</a>
       </nav>
 
       <div class="header-actions">
         <button class="lang-toggle" id="langToggle" type="button" aria-label="Alternar idioma">
-          EN
+          <span class="lang-bracket">[</span>EN<span class="lang-bracket">]</span>
         </button>
         <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu" aria-expanded="false">
-          ☰
+          ≡
         </button>
       </div>
     </header>
 
     <main>
+      <!-- ===== HERO / EDITOR BUFFER ===== -->
       <section class="hero" id="home">
         <div class="hero-grid" aria-hidden="true"></div>
-        <div class="hero-orb orb-one" aria-hidden="true"></div>
-        <div class="hero-orb orb-two" aria-hidden="true"></div>
 
         <div class="hero-wrapper">
-          <div class="hero-content reveal">
+          <div class="hero-content">
             <span
               class="badge"
-              data-pt="Disponível para oportunidades Front-End Júnior"
-              data-en="Available for Junior Front-End opportunities"
-              >Disponível para oportunidades Front-End Júnior</span
+              data-pt="disponível para oportunidades Front-End Júnior"
+              data-en="available for Junior Front-End opportunities"
+              >disponível para oportunidades Front-End Júnior</span
             >
 
-            <h1
-              data-pt="Front-End Developer criando interfaces modernas para negócios reais."
-              data-en="Front-End Developer building modern interfaces for real businesses."
-            >
-              Front-End Developer criando interfaces modernas para negócios reais.
+            <h1>
+              <span
+                data-pt="Front-End Developer criando interfaces modernas para negócios reais."
+                data-en="Front-End Developer building modern interfaces for real businesses."
+              >
+                Front-End Developer criando interfaces modernas para negócios reais.
+              </span><span class="caret" aria-hidden="true"></span>
             </h1>
 
             <p
@@ -79,24 +96,22 @@
             </p>
 
             <div class="hero-actions">
-              <a href="#projects" class="btn primary" data-pt="Ver projetos" data-en="View projects">Ver projetos</a>
-              <a href="#contact" class="btn secondary" data-pt="Fale comigo" data-en="Contact me">Fale comigo</a>
+              <a href="#projects" class="btn primary" data-pt="ver projetos" data-en="view projects">ver projetos</a>
+              <a href="#contact" class="btn secondary" data-pt="fale comigo" data-en="contact me">fale comigo</a>
               <a
                 href="./assets/curriculo-joao-victor-ptbr.pdf"
                 class="btn ghost"
                 target="_blank"
                 rel="noopener noreferrer"
-                data-pt="Currículo PT-BR"
-                data-en="Portuguese CV"
-                >Currículo PT-BR</a
+                data-pt="currículo PT-BR" data-en="Portuguese CV"
+                >currículo PT-BR</a
               >
               <a
                 href="./assets/cv-joao-victor-en.pdf"
                 class="btn ghost"
                 target="_blank"
                 rel="noopener noreferrer"
-                data-pt="Currículo EN"
-                data-en="English CV"
+                data-pt="CV English" data-en="English CV"
                 >CV English</a
               >
             </div>
@@ -104,7 +119,7 @@
             <div class="stats" aria-label="Resumo profissional">
               <div>
                 <strong>6+</strong>
-                <span data-pt="Projetos publicados" data-en="Published projects">Projetos publicados</span>
+                <span data-pt="projetos publicados" data-en="published projects">projetos publicados</span>
               </div>
               <div>
                 <strong>3+</strong>
@@ -112,32 +127,44 @@
               </div>
               <div>
                 <strong>100%</strong>
-                <span data-pt="Layouts responsivos" data-en="Responsive layouts">Layouts responsivos</span>
+                <span data-pt="layouts responsivos" data-en="responsive layouts">layouts responsivos</span>
               </div>
             </div>
           </div>
 
-          <div class="hero-visual reveal tilt-card">
+          <div class="hero-visual">
+            <div class="code-window" aria-hidden="true">
+              <div class="cw-bar">
+                <span class="traffic small"><i></i><i></i><i></i></span>
+                <span class="cw-file">whoami.sh</span>
+              </div>
+              <div class="cw-body">
+                <span class="cw-prompt">❯ <span class="typed">whoami</span></span>
+                <span class="cw-line"><span class="tok-str">"joao-victor"</span></span>
+                <span class="cw-prompt">❯ cat stack.json</span>
+                <span class="cw-line"><span class="tok-key">role</span>: <span class="tok-str">"front-end"</span>,</span>
+                <span class="cw-line"><span class="tok-key">focus</span>: [<span class="tok-str">"ui"</span>, <span class="tok-str">"apis"</span>, <span class="tok-str">"dashboards"</span>],</span>
+                <span class="cw-line"><span class="tok-key">status</span>: <span class="tok-fn">available</span>()<span class="blink">▋</span></span>
+              </div>
+            </div>
+
             <div class="photo-frame">
+              <div class="pf-bar">
+                <span class="traffic small"><i></i><i></i><i></i></span>
+                <span class="pf-file">joao-victor.png</span>
+              </div>
               <img src="./assets/joao-victor-profile.png" alt="João Victor em ambiente de trabalho com dashboard e código" />
-            </div>
-            <div class="floating-card floating-card-one">
-              <strong>Front-End</strong>
-              <span>HTML • CSS • JS • React</span>
-            </div>
-            <div class="floating-card floating-card-two">
-              <strong>Projetos reais</strong>
-              <span>Sites • Dashboards • APIs</span>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- ===== ABOUT ===== -->
       <section class="section about-premium" id="about">
         <div class="about-bg-layer" aria-hidden="true"></div>
-        <div class="about-glass reveal tilt-card">
+        <div class="about-glass reveal">
           <div class="section-title">
-            <span data-pt="Sobre mim" data-en="About me">Sobre mim</span>
+            <span class="kicker" data-pt="sobre" data-en="about">sobre</span>
             <h2
               data-pt="Eu não apenas escrevo código. Eu construo interfaces que fazem negócios parecerem mais profissionais."
               data-en="I don't just write code. I build interfaces that make businesses look more professional."
@@ -155,57 +182,66 @@
         </div>
       </section>
 
+      <!-- ===== SKILLS / DEPENDENCIES ===== -->
       <section class="section dark" id="skills">
         <div class="section-title reveal">
-          <span data-pt="Tecnologias" data-en="Skills">Tecnologias</span>
+          <span class="kicker" data-pt="stack" data-en="stack">stack</span>
           <h2 data-pt="Stack que uso para criar projetos reais" data-en="Stack I use to build real-world projects">
             Stack que uso para criar projetos reais
           </h2>
         </div>
 
-        <div class="skills-grid">
-          <div class="skill-card reveal tilt-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-            <span>HTML5</span>
+        <div class="deps-panel reveal">
+          <div class="deps-bar">
+            <span class="traffic small"><i></i><i></i><i></i></span>
+            <span class="deps-file">package.json</span>
+            <span class="deps-meta">"dependencies"</span>
           </div>
-          <div class="skill-card reveal tilt-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-            <span>CSS3</span>
-          </div>
-          <div class="skill-card reveal tilt-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-            <span>JavaScript</span>
-          </div>
-          <div class="skill-card reveal tilt-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-            <span>React</span>
-          </div>
-          <div class="skill-card reveal tilt-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-            <span>Node.js</span>
-          </div>
-          <div class="skill-card reveal tilt-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" />
-            <span>Express</span>
-          </div>
-          <div class="skill-card reveal tilt-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
-            <span>MongoDB</span>
-          </div>
-          <div class="skill-card reveal tilt-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-            <span>Git</span>
-          </div>
-          <div class="skill-card reveal tilt-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-            <span>GitHub</span>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+              <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+              <span>CSS3</span>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+              <span>React</span>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+              <span>Node.js</span>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" />
+              <span>Express</span>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+              <span>Git</span>
+            </div>
+            <div class="skill-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+              <span>GitHub</span>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- ===== PROJECTS ===== -->
       <section class="section" id="projects">
         <div class="section-title reveal">
-          <span data-pt="Portfólio" data-en="Portfolio">Portfólio</span>
+          <span class="kicker" data-pt="portfólio" data-en="portfolio">portfólio</span>
           <h2 data-pt="Projetos em destaque" data-en="Featured projects">Projetos em destaque</h2>
           <p
             class="section-description"
@@ -217,133 +253,158 @@
         </div>
 
         <div class="projects-grid">
-          <article class="project-card featured reveal tilt-card">
-            <div class="project-top">
-              <span class="project-number">01</span>
+          <article class="project-card featured reveal">
+            <div class="card-bar">
+              <span class="traffic small"><i></i><i></i><i></i></span>
+              <span class="card-file">saas-dashboard<span class="ext-tsx">.tsx</span></span>
               <span class="project-status">Fullstack</span>
             </div>
-            <h3>SaaS Dashboard</h3>
-            <p
-              data-pt="Dashboard SaaS com autenticação JWT, API REST, MongoDB, métricas, rota protegida e interface responsiva. Projeto criado para demonstrar login, back-end e consumo de API."
-              data-en="SaaS dashboard with JWT authentication, REST API, MongoDB, metrics, protected route and responsive UI. Built to demonstrate login, back-end and API consumption."
-            >
-              Dashboard SaaS com autenticação JWT, API REST, MongoDB, métricas, rota protegida e interface responsiva. Projeto criado para demonstrar login, back-end e consumo de API.
-            </p>
-            <div class="tags">
-              <span>JavaScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://saas-dashb.netlify.app/" target="_blank" rel="noopener noreferrer" data-pt="Ver online" data-en="View live">Ver online</a>
-              <a href="https://github.com/joaovictorar/saas-dashboard-jv" target="_blank" rel="noopener noreferrer" data-pt="Ver código" data-en="View code">Ver código</a>
+            <div class="card-body">
+              <span class="project-number">01</span>
+              <h3>SaaS Dashboard</h3>
+              <p
+                data-pt="Dashboard SaaS com autenticação JWT, API REST, MongoDB, métricas, rota protegida e interface responsiva. Projeto criado para demonstrar login, back-end e consumo de API."
+                data-en="SaaS dashboard with JWT authentication, REST API, MongoDB, metrics, protected route and responsive UI. Built to demonstrate login, back-end and API consumption."
+              >
+                Dashboard SaaS com autenticação JWT, API REST, MongoDB, métricas, rota protegida e interface responsiva. Projeto criado para demonstrar login, back-end e consumo de API.
+              </p>
+              <div class="tags">
+                <span>JavaScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://saas-dashb.netlify.app/" target="_blank" rel="noopener noreferrer" data-pt="ver online" data-en="view live">ver online</a>
+                <a href="https://github.com/joaovictorar/saas-dashboard-jv" target="_blank" rel="noopener noreferrer" data-pt="ver código" data-en="view code">ver código</a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card featured reveal tilt-card">
-            <div class="project-top">
-              <span class="project-number">02</span>
+          <article class="project-card featured reveal">
+            <div class="card-bar">
+              <span class="traffic small"><i></i><i></i><i></i></span>
+              <span class="card-file">barber-scheduler<span class="ext-js">.js</span></span>
               <span class="project-status" data-pt="Sistema real" data-en="Real system">Sistema real</span>
             </div>
-            <h3>Renovação Barber Shop</h3>
-            <p
-              data-pt="Sistema de agendamento para barbearia com escolha de profissional, horários disponíveis, confirmação via WhatsApp e painel administrativo para gerenciar reservas."
-              data-en="Scheduling system for a barbershop with professional selection, available time slots, WhatsApp confirmation and admin panel to manage bookings."
-            >
-              Sistema de agendamento para barbearia com escolha de profissional, horários disponíveis, confirmação via WhatsApp e painel administrativo para gerenciar reservas.
-            </p>
-            <div class="tags">
-              <span>JavaScript</span><span>Node.js</span><span>MongoDB</span><span>API REST</span><span>WhatsApp</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://renovacao-barber-shop-v3.vercel.app/" target="_blank" rel="noopener noreferrer" data-pt="Ver online" data-en="View live">Ver online</a>
-              <a href="https://renovacao-barber-api.onrender.com/" target="_blank" rel="noopener noreferrer" data-pt="Ver API" data-en="View API">Ver API</a>
+            <div class="card-body">
+              <span class="project-number">02</span>
+              <h3>Renovação Barber Shop</h3>
+              <p
+                data-pt="Sistema de agendamento para barbearia com escolha de profissional, horários disponíveis, confirmação via WhatsApp e painel administrativo para gerenciar reservas."
+                data-en="Scheduling system for a barbershop with professional selection, available time slots, WhatsApp confirmation and admin panel to manage bookings."
+              >
+                Sistema de agendamento para barbearia com escolha de profissional, horários disponíveis, confirmação via WhatsApp e painel administrativo para gerenciar reservas.
+              </p>
+              <div class="tags">
+                <span>JavaScript</span><span>Node.js</span><span>MongoDB</span><span>API REST</span><span>WhatsApp</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://renovacao-barber-shop-v3.vercel.app/" target="_blank" rel="noopener noreferrer" data-pt="ver online" data-en="view live">ver online</a>
+                <a href="https://renovacao-barber-api.onrender.com/" target="_blank" rel="noopener noreferrer" data-pt="ver API" data-en="view API">ver API</a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card reveal tilt-card">
-            <div class="project-top">
-              <span class="project-number">03</span>
+          <article class="project-card reveal">
+            <div class="card-bar">
+              <span class="traffic small"><i></i><i></i><i></i></span>
+              <span class="card-file">recanto-verde<span class="ext-html">.html</span></span>
               <span class="project-status" data-pt="Site comercial" data-en="Business website">Site comercial</span>
             </div>
-            <h3>Pousada Recanto Verde</h3>
-            <p
-              data-pt="Site comercial responsivo para pousada, com apresentação dos quartos, galeria, localização, contato e chamada direta para reserva pelo WhatsApp."
-              data-en="Responsive business website for an inn, featuring rooms, gallery, location, contact and direct WhatsApp booking call-to-action."
-            >
-              Site comercial responsivo para pousada, com apresentação dos quartos, galeria, localização, contato e chamada direta para reserva pelo WhatsApp.
-            </p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UX/UI</span><span>WhatsApp</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://recanto-verde-site.vercel.app/" target="_blank" rel="noopener noreferrer" data-pt="Ver online" data-en="View live">Ver online</a>
+            <div class="card-body">
+              <span class="project-number">03</span>
+              <h3>Pousada Recanto Verde</h3>
+              <p
+                data-pt="Site comercial responsivo para pousada, com apresentação dos quartos, galeria, localização, contato e chamada direta para reserva pelo WhatsApp."
+                data-en="Responsive business website for an inn, featuring rooms, gallery, location, contact and direct WhatsApp booking call-to-action."
+              >
+                Site comercial responsivo para pousada, com apresentação dos quartos, galeria, localização, contato e chamada direta para reserva pelo WhatsApp.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UX/UI</span><span>WhatsApp</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://recanto-verde-site.vercel.app/" target="_blank" rel="noopener noreferrer" data-pt="ver online" data-en="view live">ver online</a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card reveal tilt-card">
-            <div class="project-top">
-              <span class="project-number">04</span>
+          <article class="project-card reveal">
+            <div class="card-bar">
+              <span class="traffic small"><i></i><i></i><i></i></span>
+              <span class="card-file">a11y-assistant<span class="ext-js">.js</span></span>
               <span class="project-status" data-pt="Acessibilidade" data-en="Accessibility">Acessibilidade</span>
             </div>
-            <h3>Assistente Odontológico</h3>
-            <p
-              data-pt="Assistente virtual com foco em acessibilidade, áudio guiado, botões grandes e navegação simples para ajudar pacientes com dificuldade de leitura."
-              data-en="Virtual assistant focused on accessibility, guided audio, large buttons and simple navigation to help patients with reading difficulties."
-            >
-              Assistente virtual com foco em acessibilidade, áudio guiado, botões grandes e navegação simples para ajudar pacientes com dificuldade de leitura.
-            </p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Acessibilidade</span><span>Áudio</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://assistente-odontologico.vercel.app/" target="_blank" rel="noopener noreferrer" data-pt="Ver online" data-en="View live">Ver online</a>
+            <div class="card-body">
+              <span class="project-number">04</span>
+              <h3>Assistente Odontológico</h3>
+              <p
+                data-pt="Assistente virtual com foco em acessibilidade, áudio guiado, botões grandes e navegação simples para ajudar pacientes com dificuldade de leitura."
+                data-en="Virtual assistant focused on accessibility, guided audio, large buttons and simple navigation to help patients with reading difficulties."
+              >
+                Assistente virtual com foco em acessibilidade, áudio guiado, botões grandes e navegação simples para ajudar pacientes com dificuldade de leitura.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Acessibilidade</span><span>Áudio</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://assistente-odontologico.vercel.app/" target="_blank" rel="noopener noreferrer" data-pt="ver online" data-en="view live">ver online</a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card reveal tilt-card">
-            <div class="project-top">
-              <span class="project-number">05</span>
+          <article class="project-card reveal">
+            <div class="card-bar">
+              <span class="traffic small"><i></i><i></i><i></i></span>
+              <span class="card-file">sol-nascente<span class="ext-html">.html</span></span>
               <span class="project-status" data-pt="Site comercial" data-en="Business website">Site comercial</span>
             </div>
-            <h3>Pousada Sol Nascente</h3>
-            <p
-              data-pt="Site para pousada com visual limpo, galeria, localização, contato, Instagram e consulta de disponibilidade para facilitar o atendimento ao cliente."
-              data-en="Website for an inn with clean visuals, gallery, location, contact, Instagram and availability inquiry to make customer service easier."
-            >
-              Site para pousada com visual limpo, galeria, localização, contato, Instagram e consulta de disponibilidade para facilitar o atendimento ao cliente.
-            </p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsivo</span><span>Vercel</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://pousada-sol-nascente.vercel.app/" target="_blank" rel="noopener noreferrer" data-pt="Ver online" data-en="View live">Ver online</a>
+            <div class="card-body">
+              <span class="project-number">05</span>
+              <h3>Pousada Sol Nascente</h3>
+              <p
+                data-pt="Site para pousada com visual limpo, galeria, localização, contato, Instagram e consulta de disponibilidade para facilitar o atendimento ao cliente."
+                data-en="Website for an inn with clean visuals, gallery, location, contact, Instagram and availability inquiry to make customer service easier."
+              >
+                Site para pousada com visual limpo, galeria, localização, contato, Instagram e consulta de disponibilidade para facilitar o atendimento ao cliente.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsivo</span><span>Vercel</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://pousada-sol-nascente.vercel.app/" target="_blank" rel="noopener noreferrer" data-pt="ver online" data-en="view live">ver online</a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card reveal tilt-card">
-            <div class="project-top">
-              <span class="project-number">06</span>
+          <article class="project-card reveal">
+            <div class="card-bar">
+              <span class="traffic small"><i></i><i></i><i></i></span>
+              <span class="card-file">portfolio<span class="ext-html">.html</span></span>
               <span class="project-status" data-pt="Portfólio" data-en="Portfolio">Portfólio</span>
             </div>
-            <h3>Portfólio Profissional</h3>
-            <p
-              data-pt="Portfólio pessoal bilíngue com design dark premium, animações suaves, projetos reais, SEO básico e layout responsivo para desktop e mobile."
-              data-en="Bilingual personal portfolio with premium dark design, smooth animations, real projects, basic SEO and responsive layout for desktop and mobile."
-            >
-              Portfólio pessoal bilíngue com design dark premium, animações suaves, projetos reais, SEO básico e layout responsivo para desktop e mobile.
-            </p>
-            <div class="tags">
-              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SEO</span><span>Responsive</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://github.com/joaovictorar" target="_blank" rel="noopener noreferrer" data-pt="Ver GitHub" data-en="View GitHub">Ver GitHub</a>
+            <div class="card-body">
+              <span class="project-number">06</span>
+              <h3>Portfólio Profissional</h3>
+              <p
+                data-pt="Portfólio pessoal bilíngue com design dark premium, animações suaves, projetos reais, SEO básico e layout responsivo para desktop e mobile."
+                data-en="Bilingual personal portfolio with premium dark design, smooth animations, real projects, basic SEO and responsive layout for desktop and mobile."
+              >
+                Portfólio pessoal bilíngue com design dark premium, animações suaves, projetos reais, SEO básico e layout responsivo para desktop e mobile.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SEO</span><span>Responsive</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/joaovictorar" target="_blank" rel="noopener noreferrer" data-pt="ver GitHub" data-en="view GitHub">ver GitHub</a>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
+      <!-- ===== EXPERIENCE ===== -->
       <section class="section why dark" id="experience">
         <div class="section-title reveal">
-          <span data-pt="Experiência prática" data-en="Practical experience">Experiência prática</span>
+          <span class="kicker" data-pt="experiência" data-en="experience">experiência</span>
           <h2
             data-pt="Projetos reais, foco em entrega e pensamento de negócio."
             data-en="Real projects, delivery focus and business thinking."
@@ -353,7 +414,8 @@
         </div>
 
         <div class="why-grid">
-          <div class="why-card reveal tilt-card">
+          <div class="why-card reveal">
+            <span class="why-glyph" aria-hidden="true">01</span>
             <h3 data-pt="Sites para negócios" data-en="Business websites">Sites para negócios</h3>
             <p
               data-pt="Criação de páginas para pousadas, serviços e pequenos negócios com foco em apresentação, confiança e contato rápido pelo WhatsApp."
@@ -363,7 +425,8 @@
             </p>
           </div>
 
-          <div class="why-card reveal tilt-card">
+          <div class="why-card reveal">
+            <span class="why-glyph" aria-hidden="true">02</span>
             <h3 data-pt="Sistemas com API" data-en="Systems with APIs">Sistemas com API</h3>
             <p
               data-pt="Desenvolvimento de dashboards e sistemas com rotas, autenticação, banco de dados, consumo de API e deploy online."
@@ -373,7 +436,8 @@
             </p>
           </div>
 
-          <div class="why-card reveal tilt-card">
+          <div class="why-card reveal">
+            <span class="why-glyph" aria-hidden="true">03</span>
             <h3 data-pt="Aprendizado contínuo" data-en="Continuous learning">Aprendizado contínuo</h3>
             <p
               data-pt="Estudo constante em Front-End, React, JavaScript, Node.js e boas práticas para evoluir como desenvolvedor júnior."
@@ -385,61 +449,68 @@
         </div>
       </section>
 
+      <!-- ===== COURSES ===== -->
       <section class="section courses">
         <div class="section-title reveal">
-          <span data-pt="Cursos" data-en="Courses">Cursos</span>
+          <span class="kicker" data-pt="cursos" data-en="courses">cursos</span>
           <h2 data-pt="Formação complementar" data-en="Additional training">Formação complementar</h2>
         </div>
 
         <div class="courses-grid">
-          <div class="course-card reveal tilt-card">
+          <div class="course-card reveal">
+            <span class="course-tick" aria-hidden="true">✓</span>
             <strong>DIO</strong>
-            <span>Santander 2026 - AI React Front-end</span>
+            <span>Santander 2026 — AI React Front-end</span>
           </div>
-          <div class="course-card reveal tilt-card">
+          <div class="course-card reveal">
+            <span class="course-tick" aria-hidden="true">✓</span>
             <strong>DIO</strong>
-            <span>Akad - Fullstack Developer</span>
+            <span>Akad — Fullstack Developer</span>
           </div>
-          <div class="course-card reveal tilt-card">
+          <div class="course-card reveal">
+            <span class="course-tick" aria-hidden="true">✓</span>
             <strong>Udemy</strong>
             <span>Lógica de Programação Completa</span>
           </div>
-          <div class="course-card reveal tilt-card">
+          <div class="course-card reveal">
+            <span class="course-tick" aria-hidden="true">✓</span>
             <strong>Udemy</strong>
             <span>Desenvolvimento Web Compacto e Completo</span>
           </div>
         </div>
       </section>
 
+      <!-- ===== CONTACT ===== -->
       <section class="section contact" id="contact">
         <div class="section-title reveal">
-          <span data-pt="Contato" data-en="Contact">Contato</span>
+          <span class="kicker" data-pt="contato" data-en="contact">contato</span>
           <h2 data-pt="Vamos construir algo profissional juntos." data-en="Let's build something professional together.">
-            Vamos construir algo
-            <br/>
-            profissional juntos.
+            Vamos construir algo profissional juntos.
           </h2>
         </div>
 
-        <div class="contact-box reveal tilt-card">
-          <p>
-            Email:
-            <a href="mailto:joao.victor.alvesr@gmail.com">joao.victor.alvesr@gmail.com</a>
-          </p>
-          <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/jo%C3%A3ovictorar" target="_blank" rel="noopener noreferrer">linkedin.com/in/joãovictorar</a>
-          </p>
-          <p>
-            GitHub:
-            <a href="https://github.com/joaovictorar" target="_blank" rel="noopener noreferrer">github.com/joaovictorar</a>
-          </p>
+        <div class="contact-box reveal">
+          <div class="contact-bar">
+            <span class="traffic small"><i></i><i></i><i></i></span>
+            <span class="contact-file">contact.sh</span>
+          </div>
+          <div class="contact-lines">
+            <p><span class="cw-prompt">❯</span> email <span class="arrow">→</span>
+              <a href="mailto:joao.victor.alvesr@gmail.com">joao.victor.alvesr@gmail.com</a>
+            </p>
+            <p><span class="cw-prompt">❯</span> linkedin <span class="arrow">→</span>
+              <a href="https://www.linkedin.com/in/jo%C3%A3ovictorar" target="_blank" rel="noopener noreferrer">linkedin.com/in/joãovictorar</a>
+            </p>
+            <p><span class="cw-prompt">❯</span> github <span class="arrow">→</span>
+              <a href="https://github.com/joaovictorar" target="_blank" rel="noopener noreferrer">github.com/joaovictorar</a>
+            </p>
+          </div>
 
           <div class="contact-actions">
-            <a class="btn primary" href="mailto:joao.victor.alvesr@gmail.com" data-pt="Enviar e-mail" data-en="Send email">Enviar e-mail</a>
-            <a class="btn secondary" href="https://www.linkedin.com/in/jo%C3%A3ovictorar" target="_blank" rel="noopener noreferrer" data-pt="Ver LinkedIn" data-en="View LinkedIn">Ver LinkedIn</a>
-            <a class="btn ghost" href="./assets/curriculo-joao-victor-ptbr.pdf" target="_blank" rel="noopener noreferrer" data-pt="Baixar currículo PT-BR" data-en="Download Portuguese CV">Baixar currículo PT-BR</a>
-            <a class="btn ghost" href="./assets/cv-joao-victor-en.pdf" target="_blank" rel="noopener noreferrer" data-pt="Baixar currículo EN" data-en="Download English CV">Baixar currículo EN</a>
+            <a class="btn primary" href="mailto:joao.victor.alvesr@gmail.com" data-pt="enviar e-mail" data-en="send email">enviar e-mail</a>
+            <a class="btn secondary" href="https://www.linkedin.com/in/jo%C3%A3ovictorar" target="_blank" rel="noopener noreferrer" data-pt="ver LinkedIn" data-en="view LinkedIn">ver LinkedIn</a>
+            <a class="btn ghost" href="./assets/curriculo-joao-victor-ptbr.pdf" target="_blank" rel="noopener noreferrer" data-pt="baixar currículo PT-BR" data-en="download Portuguese CV">baixar currículo PT-BR</a>
+            <a class="btn ghost" href="./assets/cv-joao-victor-en.pdf" target="_blank" rel="noopener noreferrer" data-pt="baixar currículo EN" data-en="download English CV">baixar currículo EN</a>
           </div>
         </div>
       </section>
@@ -453,6 +524,21 @@
         © 2026 João Victor. Desenvolvido com HTML, CSS e JavaScript.
       </p>
     </footer>
+
+    <!-- ===== IDE STATUS BAR ===== -->
+    <div class="statusbar" aria-hidden="true">
+      <div class="sb-left">
+        <span class="sb-item sb-branch"> main</span>
+        <span class="sb-item sb-ok">● online</span>
+        <span class="sb-item sb-loc">São Paulo, BR</span>
+      </div>
+      <div class="sb-right">
+        <span class="sb-item">UTF-8</span>
+        <span class="sb-item">LF</span>
+        <span class="sb-item sb-lang">HTML · CSS · JS</span>
+        <span class="sb-item sb-clock" id="sbClock">--:--:--</span>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

@@ -755,6 +755,7 @@ footer {
 .projects-grid .reveal:nth-child(4) { transition-delay: 0.06s; }
 .projects-grid .reveal:nth-child(5) { transition-delay: 0.12s; }
 .projects-grid .reveal:nth-child(6) { transition-delay: 0.18s; }
+.projects-grid .reveal:nth-child(7) { transition-delay: 0.06s; }
 .why-grid .reveal:nth-child(2) { transition-delay: 0.08s; }
 .why-grid .reveal:nth-child(3) { transition-delay: 0.16s; }
 

@@ -823,7 +823,7 @@ footer {
   .photo-frame { max-width: 100%; }
   .photo-frame img { aspect-ratio: 16 / 12; object-position: center 30%; }
   .contact-actions .btn { width: 100%; justify-content: center; }
-  .sb-loc, .sb-lang, .sb-right .sb-item:not(.sb-clock) { display: none; }
+  .sb-lang,.sb-right .sb-item:not(.sb-clock) { display: none; }
   .about-premium::before {
     background: linear-gradient(180deg, rgba(11, 13, 22, 0.3) 0%, rgba(11, 13, 22, 0.92) 55%, rgba(11, 13, 22, 1) 100%);
   }

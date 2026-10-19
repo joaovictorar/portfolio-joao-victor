@@ -521,6 +521,32 @@ main, .header, footer, .statusbar { position: relative; z-index: 2; }
 .skill-card:hover span { color: var(--fg); }
 .skill-card:hover img { transform: scale(1.14) rotate(-4deg); }
 
+/* estudando agora: separado da stack principal, de propósito mais discreto */
+.learning {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  padding: 14px 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+}
+.learning-title {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.learning-title::before { content: "// "; color: var(--comment); }
+.learning-list { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.learning-list li {
+  padding: 4px 10px;
+  border: 1px dashed rgba(255, 180, 84, 0.3);
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
 /* =====================================================================
    PROJECTS  ·  painéis de arquivo
    ===================================================================== */
@@ -544,7 +570,6 @@ main, .header, footer, .statusbar { position: relative; z-index: 2; }
 .project-card.featured:hover { border-color: rgba(99, 211, 240, 0.55); }
 
 .card-file { font-weight: 500; color: var(--fg); }
-.ext-tsx { color: var(--cyan); }
 .ext-js { color: var(--amber); }
 .ext-html { color: var(--red); }
 

@@ -572,6 +572,7 @@ main, .header, footer, .statusbar { position: relative; z-index: 2; }
 .card-file { font-weight: 500; color: var(--fg); }
 .ext-js { color: var(--amber); }
 .ext-html { color: var(--red); }
+.ext-ts { color: var(--blue); }
 
 .project-status {
   margin-left: auto;

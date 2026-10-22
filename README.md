@@ -6,15 +6,18 @@ Arquivos corrigidos e reorganizados:
 - `style.css`
 - `script.js`
 - `assets/favicon-jv.png`
-- `assets/joao-victor-profile.png`
-- `assets/about-bg.png`
+- `assets/joao-victor-profile.webp`
+- `assets/about-bg.webp`
+- `assets/joao-victor-og.jpg`
 
 Principais ajustes:
 - Links `#` removidos dos projetos.
-- Projetos reais adicionados: SaaS Dashboard, Renovação Barber Shop, Pousada Recanto Verde, Assistente Odontológico, Pousada Sol Nascente.
+- Projetos reais adicionados: SaaS Dashboard, Renovação Barber Shop, Dental Slim, Pousada Recanto Verde, Assistente Odontológico, Pousada Sol Nascente.
+- SaaS Dashboard atualizado: stack React + TypeScript + Vite + Node.js + Express + MongoDB + JWT, site em https://saas-dashboard-jv.vercel.app e código em https://github.com/joaovictorar/saas-dashboard-jv.
+- TypeScript adicionado à seção de stack (saiu de "estudando agora").
 - Foto profissional adicionada no Hero.
 - Favicon corrigido para `./assets/favicon-jv.png`.
-- Imagem do About corrigida para `./assets/about-bg.png`.
+- Imagem do About corrigida para `./assets/about-bg.webp`.
 - Seções de experiência prática e cursos adicionadas.
 - SEO básico e tags Open Graph adicionadas.
 - Responsividade melhorada.
